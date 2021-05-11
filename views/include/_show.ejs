@@ -1,0 +1,13 @@
+<% for(var i = 0; i < users.length; i++) { %>
+  <td><%= i + 1 %></td>
+  <td><%= users[i].name %></td>
+  <td><%= users[i].email %></td>
+  <td><%= users[i].test1 %></td>
+  <td><%= users[i].test2 %></td>
+  <td><%= users[i].test3%></td>
+  <!-- use parseInt to convert into integer 
+  Don'know why not working straight forword Subs..... -->
+  <td><%= parseInt(users[i].test1) + parseInt(users[i].test2) + parseInt(users[i].test3) %></td>
+  <td><%= (parseInt(users[i].test1) + parseInt(users[i].test2) + parseInt(users[i].test3))/3  %></td>
+</tr>
+<% } %>
